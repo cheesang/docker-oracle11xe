@@ -21,7 +21,7 @@ cp /tmp/filesOracle/init.ora $ORACLE_HOME/config/scripts
 cp /tmp/filesOracle/initXETemp.ora $ORACLE_HOME/config/scripts
 
 #final configuration
-/usr/bin/printf 8080\\n1521\\nias1234\\nias1234\\ny\\n | /etc/init.d/oracle-xe configure
+/usr/bin/printf 8080\\n1521\\noracle\\noracle\\ny\\n | /etc/init.d/oracle-xe configure
 
 cp /tmp/filesOracle/run.sh /
 cp /tmp/filesOracle/createListener.sh /

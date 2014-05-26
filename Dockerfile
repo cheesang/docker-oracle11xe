@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 MAINTAINER cheesang@gmail.com
 
-RUN echo 'root:ias1234' |chpasswd
+RUN echo 'root:root' |chpasswd
 
 # SSH
 RUN apt-get -y update

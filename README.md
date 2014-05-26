@@ -15,3 +15,13 @@ Thanks to Maciej Próchniak (https://github.com/mproch/docker-oracle-xe), I have
 > docker run -d -p  ??:1521 -p  ??:22 -p  ??:8080
 
 *replace ?? with port required*
+
+**Password**
+
+ssh login = root/root, to change please modified this line in dockerfile
+> RUN echo 'root:root' |chpasswd
+
+<br/>
+oracle password for sys and system is 'oracle', to change please modified this line in install.sh
+
+> /usr/bin/printf 8080\\n1521\\n**oracle**\\n**oracle**\\ny\\n | /etc/init.d/oracle-xe configure
